@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const app = express();
+const port = process.env.PORT || 3000;
 
 // views setting
 app.set('view engine', 'hbs');
@@ -36,4 +37,4 @@ app.get('/about', (req, resp) => {
   });
 });
 
-app.listen(3000, () => console.log('Server is listening on localhost:3000'));
+app.listen(port, () => console.log(`Server is listening on localhost:${port}`));
