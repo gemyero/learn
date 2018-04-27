@@ -32,7 +32,7 @@ app.get('/', (req, resp) => {
 
 app.get('/about', (req, resp) => {
   resp.render('about.hbs', {
-    pageTitle: "About Mohamed Gamal",
+    pageTitle: "About Mohamed Gamal Rady",
     currnetYear: new Date().getFullYear()
   });
 });
