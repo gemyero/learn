@@ -1,5 +1,4 @@
 const express = require('express');
-const hbs = require('hbs');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -26,7 +25,7 @@ app.get('/', (req, resp) => {
     pageTitle: "Home Page",
     currnetYear: new Date().getFullYear(),
     name: "Mohamed Gamal Rady",
-    age: 26
+    age: 28
   });
 });
 
@@ -37,4 +36,4 @@ app.get('/about', (req, resp) => {
   });
 });
 
-app.listen(port, () => console.log(`Server is listening on localhost:${port}`));
+app.listen(port, () => console.log(`Server listening on port ${port}`));
