@@ -1,6 +1,6 @@
 dist: xenial
-services:
- - docker
+language: node_js
+node_js:
+ - lts/*
 
-before_script: cat /etc/passwd /etc/group
-script: docker version
+script: node -v
